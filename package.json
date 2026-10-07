@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://<तुमचं-username>.github.io/<repo-name>",
+  "homepage": "https://trinovatechnosolutions.github.io/trinova-techsolution",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

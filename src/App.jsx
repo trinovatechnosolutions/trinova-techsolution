@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from './assets/trinovaLogo.png'
 
 const Icon = ({ children, style, className = 'icon' }) => (
   <svg className={className} style={style} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -66,13 +67,7 @@ export default function App() {
   return (
     <>
       <header>
-        <a href="#home" className="logo">
-          <Icon>
-            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
-            <path d="M19.4 13a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V19a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H4a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33h.02A1.65 1.65 0 0011 3.09V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51h.02a1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.02c.24.62.82 1.03 1.49 1.05H21a2 2 0 110 4h-.09c-.67.02-1.25.43-1.51 1z" />
-          </Icon>
-          {' '}Trinova <span>Tech Solution</span>
-        </a>
+        <a href="#home" className="logo"> <img src={logo} alt="Trinova Technosolutions" className="logo-img" /> </a>
         <nav>
           <ul>
             <li><a href="#home">Home</a></li>
@@ -191,17 +186,8 @@ export default function App() {
               <Icon>
                 <path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L7.9 9.9a16 16 0 006 6l1.4-1.3a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.9 2.2z" />
               </Icon>
-              <div><h4>Call Us</h4><p>+91 98765 43210</p></div>
+              <div><h4>Call Us</h4><p>+91 9970212022</p></div>
             </div>
-          </div>
-          <div className="contact-form">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <input type="text" placeholder="Subject" required />
-              <textarea rows="5" placeholder="Your Message" required></textarea>
-              <button type="submit">Send Message</button>
-            </form>
           </div>
         </div>
       </section>

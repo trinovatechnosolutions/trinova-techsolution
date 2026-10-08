@@ -23,6 +23,7 @@
         h1, h2, h3, h4, .logo { font-family: var(--font-head); }
 
         .icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.15em; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+        .logo-img { height: 50px; width: auto; display: block; }
         .service-icon .icon, .info-box .icon { width: 26px; height: 26px; vertical-align: middle; }
         .about-features .icon { width: 18px; height: 18px; flex: none; }
 
@@ -97,7 +98,7 @@
 
         /* HERO SECTION */
         .hero {
-            height: 100vh;
+            min-height: 70vh;
             background:
                 linear-gradient(160deg, rgba(16,24,32,0.95), rgba(31,75,74,0.9)),
                 repeating-linear-gradient(90deg, rgba(217,130,43,0.06) 0 1px, transparent 1px 60px),
@@ -108,7 +109,7 @@
             justify-content: center;
             text-align: center;
             color: var(--text-light);
-            padding: 0 20px;
+            padding: 100px 20px;
             margin-top: 60px;
         }
 
@@ -306,15 +307,15 @@
 
         /* CONTACT & FOOTER */
         .contact-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
+            display: block;
         }
 
         .contact-info {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 48px;
         }
 
         .info-box {

@@ -1,0 +1,1 @@
+import{j as e,L as o}from"./index-DchOJkdi.js";function n(){return e.jsx("section",{className:"page-hero",children:e.jsxs("div",{className:"container",children:[e.jsx("h1",{children:"Page not found"}),e.jsx("p",{children:"The page you are looking for does not exist or has moved."}),e.jsx(o,{to:"/",className:"btn btn-primary",children:"Back to Home"})]})})}export{n as default};

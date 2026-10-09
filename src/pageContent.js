@@ -8,7 +8,7 @@ export const site = {
   slogan: 'Engineering Innovation. Automating Possibilities.',
   email: 'info@trinovatechnosolutions.com',
   phone: '+91 9970212022',
-  location: 'Pune, Maharashtra, India',
+  location: 'Apostrophe Next, Datta Mandir Road, Pune-411057, Maharashtra, India',
   // Paste your Formspree endpoint here (https://formspree.io/f/xxxxxxxx) to send real emails.
   // While empty, the form falls back to opening the visitor's email app.
   formEndpoint: '',

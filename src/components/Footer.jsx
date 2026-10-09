@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { menu } from '../menuData'
 import { site } from '../pageContent'
-import logo from '../assets/trinovaLogoLight.png'
+import logo from '../assets/trinovaLogoLight.webp'
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <span className="logo"><img src={logo} alt={site.name} className="logo-img" /></span>
+          <span className="logo"><img src={logo} alt={site.name} className="logo-img" width="191" height="42" loading="lazy" decoding="async" /></span>
           <p>{site.slogan}</p>
           <p className="footer-contact">{site.email}<br />{site.phone}<br />{site.location}</p>
         </div>

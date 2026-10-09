@@ -1,8 +1,8 @@
 import React, { useEffect, useId, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { menu } from '../menuData'
-import logoDark from '../assets/trinovaLogo.png'
-import logoLight from '../assets/trinovaLogoLight.png'
+import logoDark from '../assets/trinovaLogo.webp'
+import logoLight from '../assets/trinovaLogoLight.webp'
 import { useTheme } from '../context/ThemeContext'
 import { ChevronDown, CloseIcon, MenuIcon, MoonIcon, SunIcon } from './Icons'
 
@@ -55,7 +55,7 @@ export default function Header() {
     <header ref={headerRef} className={`site-header${scrolled ? ' scrolled' : ''}`}>
       <div className="header-inner">
         <Link to="/" className="logo" aria-label="Trinova Technosolutions home">
-          <img src={theme === 'dark' ? logoLight : logoDark} alt="Trinova Technosolutions" className="logo-img" />
+          <img src={theme === 'dark' ? logoLight : logoDark} alt="Trinova Technosolutions" className="logo-img" width="191" height="42" decoding="async" fetchpriority="high" />
         </Link>
 
         <nav id={navId} className={`nav${mobileOpen ? ' open' : ''}`} aria-label="Main navigation">
